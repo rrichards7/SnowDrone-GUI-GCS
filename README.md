@@ -1,6 +1,8 @@
 # Autonomous Snowmobile - SnowDrone 
 LabVIEW Code for General User Interface (GUI)/Ground Control Station (GCS)
 
+The Pennsylvania State University - School of Electrical Engineering and Computer Science
+
 ![1](https://user-images.githubusercontent.com/23239868/28534685-84859baa-706f-11e7-8227-601510b2cf22.PNG)
 
 ## Introduction
@@ -39,24 +41,55 @@ Therefore the consumer loop executes code to complete the action associated with
 (4) the dialog to open a path, etc is executed
 
 
+## Completed Subsystems and Algorithms
+The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, Actuator and Steering control, Throttle control, Temperature and fan control*. A short description and visuals for each completed subsystem are described below.
+
+### GPS and Google Earth API ###
+The previously proposed control system that handled GPS waypoints was outdated and hard to use. The newly designed and fully integrated system uses the Google Earth API (application programming interface) to plot waypoints, paths, areas and see pings of the snowmobile's current location.
+
+#### Entering Waypoints and Creating a .kml file ####
+
+Rather than creating a LabVIEW-based program that allows the user to enter GPS coordinates, it can be completed in Google Earth. Once Google Earth is opened, right click **My Places** and click **Add** >> **Folder**
+
+![1](https://user-images.githubusercontent.com/23239868/28537036-85cc89c6-7077-11e7-9634-c169b6df7455.PNG)
+
+From here, dialog will come up asking the user futher information about the new folder. Once the user is done, simply select **OK**.
+
+![2](https://user-images.githubusercontent.com/23239868/28537392-af1366b4-7078-11e7-809d-5661b25fcf94.PNG)
+
+
+After ensuring that the desired folder is clicked/highlughted, press the **Add Placemark** button 
+![3](https://user-images.githubusercontent.com/23239868/28537448-e0f6ccca-7078-11e7-9b3b-4913c13ff84c.PNG)
+
+This will allow the user to enter the appropriate information about that placemark/waypoint, including specific lattitude/longitude coordinates, attributes, etc. Once the user is done, simply click **OK**.
+
+![4](https://user-images.githubusercontent.com/23239868/28537516-286868a2-7079-11e7-999f-8063d0e69d27.PNG)
+
+We can see now that the point has been added to the correct folder.
+
+![5](https://user-images.githubusercontent.com/23239868/28537585-6a2cac6c-7079-11e7-88a8-41de9f92e020.PNG)
+
+Finally, to properly save the file for LabVIEW, rightclick on the folder that you want to save and press **Save Place As...**
+
+![6](https://user-images.githubusercontent.com/23239868/28537767-02687eca-707a-11e7-8f95-43cc22052b82.PNG)
+
+Then navigate to the desired location and save the file as **.kml** 
+
+![7](https://user-images.githubusercontent.com/23239868/28537815-26e53450-707a-11e7-805c-158e1e745eb2.PNG)
+
+#### Opening a .kml file in LabVIEW and Displaying Waypoints ####
+
+When the user runs the main LabVIEW program, Google Earth should automatically open and display itself on the LabVIEW front panel. The same route that was configured in Google Earth should be dispalyed in LabVIEW. From there, the user can click the "Open Path" button. Dialog should then appear - prompting the user to select the appropriate .kml file. Once it is chosen, click **OK**. The file will be automatically read and parsed - effectively extracting the lattitude/longitude corrdinates for each waypoint.
+
+#### Displaying Current Location ####
 
 
 
+### Actuator ###
 
+### Throttle Control ###
 
-
-
-## Completed Subsystems
-The subsystems that have been successfully integrated are the following: GPS and Google Earth integration, Actuator, Throttle control, Temperature and fan control. A short description and visuals for each completed subsystem are described below.
-
-### GPS and Google Earth
-The previously proposed system that handles GPS waypoint 
-
-### Actuator
-
-### Throttle Control
-
-### Temperature Monitor/Fan Control
+### Temperature Monitor/Fan Control ###
 
 
 
