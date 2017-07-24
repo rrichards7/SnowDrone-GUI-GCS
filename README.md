@@ -5,11 +5,11 @@ The Pennsylvania State University - School of Electrical Engineering and Compute
 
 ![1](https://user-images.githubusercontent.com/23239868/28534685-84859baa-706f-11e7-8227-601510b2cf22.PNG)
 
-## Introduction
+## Introduction ##
 
-A LabVIEW project was constructed in order to unify the subsystems on the SnowDrone. A specific producer/consumer event driven architecture was chosen to facilitate the addition of more subsystems. This readme file explains to future students how the LabVIEW project operates, how to interface with and add more components, hardware considerations, as well as system architecture. 
+A LabVIEW project was constructed in order to unify the subsystems on the SnowDrone. A specific producer/consumer event driven architecture was chosen to facilitate the addition of more subsystems. This readme file explains to future students how the LabVIEW project operates, how to interface with and add more components, hardware considerations, as well as system architecture.
 
-## GUI/GCS Architecture
+## GUI/GCS Architecture ##
 Before subsystems are described in futher detail, it is important to understand the architecture chosen. This code is structured around events and message chains - i.e. when the user presses a button then an event will be triggered and something will happen, or a chain of events will happen. The best and most efficient architectre to accomodate this system is a message-queue based producer/consumer loop (shown in Figure 1).
 
 ![maind](https://user-images.githubusercontent.com/23239868/28534990-ccb4d994-7070-11e7-8b19-d2794b14af3e.png)
@@ -40,6 +40,7 @@ Therefore the consumer loop executes code to complete the action associated with
 (3) the "Open Path" message is enqueued and sent to the consumer loop
 (4) the dialog to open a path, etc is executed
 
+## MakerHub LINX ## 
 
 ## Completed Subsystems and Algorithms
 The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, Actuator and Steering control, Throttle control, Temperature and fan control*. A short description and visuals for each completed subsystem are described below.
@@ -79,7 +80,13 @@ Then navigate to the desired location and save the file as **.kml**
 
 #### Opening a .kml file in LabVIEW and Displaying Waypoints ####
 
-When the user runs the main LabVIEW program, Google Earth should automatically open and display itself on the LabVIEW front panel. The same route that was configured in Google Earth should be dispalyed in LabVIEW. From there, the user can click the "Open Path" button. Dialog should then appear - prompting the user to select the appropriate .kml file. Once it is chosen, click **OK**. The file will be automatically read and parsed - effectively extracting the lattitude/longitude corrdinates for each waypoint.
+When the user runs the main LabVIEW program, Google Earth should automatically open and display itself on the LabVIEW front panel. The same route that was configured in Google Earth should be dispalyed in LabVIEW.
+
+![8](https://user-images.githubusercontent.com/23239868/28538224-79aab1f0-707b-11e7-9d30-984b40a99b09.PNG)
+
+From there, the user can click the "Open Path" button. Dialog will then appear - prompting the user to select the appropriate .kml file. Once it is chosen, click **OK**. The file will be automatically read and parsed - effectively extracting the lattitude/longitude corrdinates for each waypoint.
+
+![9](https://user-images.githubusercontent.com/23239868/28538246-9c0d483e-707b-11e7-809e-42091e790e0e.PNG)
 
 #### Displaying Current Location ####
 
