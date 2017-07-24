@@ -1,5 +1,5 @@
 # Autonomous Snowmobile - SnowDrone 
-LabVIEW Code for General User Interface (GUI)/Ground Control Station (GCS)
+LabVIEW code for the General User Interface (GUI)/Ground Control Station (GCS)
 
 The Pennsylvania State University - School of Electrical Engineering and Computer Science
 
