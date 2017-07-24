@@ -42,6 +42,8 @@ Therefore the consumer loop executes code to complete the action associated with
 
 ## MakerHub LINX ## 
 
+http://sine.ni.com/nips/cds/view/p/lang/en/nid/212478
+
 ## Completed Subsystems and Algorithms
 The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, Actuator and Steering control, Throttle control, Temperature and fan control*. A short description and visuals for each completed subsystem are described below.
 
@@ -90,17 +92,32 @@ From there, the user can click the "Open Path" button. Dialog will then appear -
 
 #### Displaying Current Location ####
 
+Once the GPS is connected to the Arduino MEGA, the GPS point (lattitude/longitude) will be read from the GPS device and extracted through LabVIEW. LabVIEW will then programmatically write a .kml file called **"CurrentLocation.kml"** which createes a new point to display on the Google Earth map. Since constant GPS points are taken when the program is running, the .kml file is constantly rewritten with new values and read back into Google Earth and displayed.
 
+### Actuator and Steering Algorithm ###
 
-### Actuator ###
+The actuator is controlled by the Arduino via a motor shield to turn the vehicle. 
+
 
 ### Throttle Control ###
 
+CAD Files and design
+
+testing and code
+
+
+
 ### Temperature Monitor/Fan Control ###
 
+A thermometer was added to check the ambient temperature in the control box. 
 
 
 ## Download and Setup
+
+make sure all dependencies are here
+project download
+instructions for making project into .exe or creating installer
+
 
 ## Future Work
 
@@ -108,15 +125,18 @@ future work blurb here...
 ...
 ...
 
-### Camera
-camera subsystem will rely on optical flow method
+### Camera and Obstacle Avoidance ###
 
-### Actuator and Motor Control 
+
+
+### Actuator Motor Shield ### 
 
 PWM board for actuator
 
-### Throttle Control
+### Throttle Control ###
 
 correct setup
 
-### XTend Radios
+### XTend Radios ###
+
+setup
