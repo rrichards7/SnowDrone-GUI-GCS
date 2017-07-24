@@ -94,7 +94,7 @@ From there, the user can click the "Open Path" button. Dialog will then appear -
 
 Once the GPS is connected to the Arduino MEGA, the GPS point (lattitude/longitude) will be read from the GPS device and extracted through LabVIEW. LabVIEW will then programmatically write a .kml file called **"CurrentLocation.kml"** which createes a new point to display on the Google Earth map. Since constant GPS points are taken when the program is running, the .kml file is constantly rewritten with new values and read back into Google Earth and displayed.
 
-### Actuator and Steering Algorithm ###
+### Actuator Control and Steering Algorithm ###
 
 The actuator is controlled by the Arduino via a motor shield to turn the vehicle. 
 
