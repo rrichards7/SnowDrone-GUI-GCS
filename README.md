@@ -41,6 +41,7 @@ Therefore the consumer loop executes code to complete the action associated with
 (4) the dialog to open a path, etc is executed
 
 ## MakerHub LINX ## 
+LINX is a library developed by MakerHub that allows programmers to interface with the RaspberryPi, Arduino and other microcontrollers on LabVIEW. LINX has been used extensively in this project to communicate with the ArduinoMEGA, which controls each subsystem. Download and other information can be found at:
 
 http://sine.ni.com/nips/cds/view/p/lang/en/nid/212478
 
