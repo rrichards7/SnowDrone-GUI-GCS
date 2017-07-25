@@ -54,7 +54,7 @@ The data flow diagram below describes the main control interface for the SnowDro
 
 
 ## Completed Subsystems and Algorithms ##
-The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, Actuator and Steering control, Throttle control, Temperature and fan control*. A short description and visuals for each completed subsystem are described below.
+The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, actuator and steering control, throttle control, temperature and fan control*. A short description and visuals for each completed subsystem are included below.
 
 ### GPS and Google Earth API ###
 The previously proposed control system that handled GPS waypoints was outdated and hard to use. The newly designed and fully integrated system uses the Google Earth API (application programming interface) to plot waypoints, paths, areas and see pings of the snowmobile's current location.
