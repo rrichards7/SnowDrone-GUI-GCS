@@ -47,6 +47,8 @@ http://sine.ni.com/nips/cds/view/p/lang/en/nid/212478
 
 ## Main Data Flow ##
 
+![dataflow](https://user-images.githubusercontent.com/23239868/28581022-23d36592-712f-11e7-9085-d6b1512bad03.jpg)
+
 
 ## Completed Subsystems and Algorithms ##
 The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, Actuator and Steering control, Throttle control, Temperature and fan control*. A short description and visuals for each completed subsystem are described below.
