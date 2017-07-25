@@ -45,7 +45,10 @@ LINX is a library developed by MakerHub that allows programmers to interface wit
 
 http://sine.ni.com/nips/cds/view/p/lang/en/nid/212478
 
-## Completed Subsystems and Algorithms
+## Main Data Flow ##
+
+
+## Completed Subsystems and Algorithms ##
 The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, Actuator and Steering control, Throttle control, Temperature and fan control*. A short description and visuals for each completed subsystem are described below.
 
 ### GPS and Google Earth API ###
@@ -97,7 +100,15 @@ Once the GPS is connected to the Arduino MEGA, the GPS point (lattitude/longitud
 
 ### Actuator Control and Steering Algorithm ###
 
-The actuator is controlled by the Arduino via a motor shield to turn the vehicle. 
+The actuator is controlled by the Arduino via a motor shield to turn the vehicle. The actuator that was ordered does not have onboard PWM control. A relay cannot be used, as the actuator must be actively extended/retracted. Therefore the best way to control the actuator is with a motor shield for the arduino. This allows the actuator to be controlled by PWM and does not deteriorate any of the components. The motor shield used for testing has a 2A limit, while the actuator requires a maximum current draw of ~8-10A. Therefore a motor shield with a higher current rating is required (but for basic testing purposes the lower current rated shield will work).
+
+<pictures>
+  
+The steering algorithm is simple and does not require a compass. Rather, GPS points are read in ~2/second. Simple computations are made which calculate two things: (1) current bearing and (2) bearing to desintation. 
+
+<pictures>
+  
+
 
 
 ### Throttle Control ###
