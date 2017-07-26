@@ -52,6 +52,7 @@ The data flow diagram below describes the main control interface for the SnowDro
 
 ![dataflow](https://user-images.githubusercontent.com/23239868/28581022-23d36592-712f-11e7-9085-d6b1512bad03.jpg)
 
+object oriented ------------------------
 
 ## Completed Subsystems and Algorithms ##
 The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, actuator and steering control, throttle control, temperature and fan control*. A short description and visuals for each completed subsystem are included below.
