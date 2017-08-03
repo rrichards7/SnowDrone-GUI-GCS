@@ -100,38 +100,9 @@ From there, the user can click the "Open Path" button. Dialog will then appear -
 
 ![9](https://user-images.githubusercontent.com/23239868/28538246-9c0d483e-707b-11e7-809e-42091e790e0e.PNG)
 
-#### Hardware Setup ####
-
-Connect the **TX0** pin to the **RX3 - PIN15** on the ArduinoMEGA (do not connect anything to **TX0** or **RX0** on the ArduinoMEGA as LINX uses these terminals).
-
-Then, connect the **3.3V** terminal to the **3.3V** power supply on the ArduinoMEGA.
-
-Finally, connect the **Ground** terminal to the **Ground** terminal on the ArduinoMEGA. All connections are illustrated in the figure below.
-
-<img src="https://user-images.githubusercontent.com/23239868/28582964-71499c8c-7135-11e7-9288-09ad126642ab.jpg" height="350" width="300">
-
-
 #### Displaying Current Location ####
 
 Once the GPS is connected to the Arduino MEGA, the GPS point (lattitude/longitude) will be read from the GPS device and extracted through LabVIEW. LabVIEW will then programmatically write a .kml file called **"CurrentLocation.kml"** which createes a new point to display on the Google Earth map. Since constant GPS points are taken when the program is running, the .kml file is constantly rewritten with new values and read back into Google Earth and displayed.
-
-### Actuator Control and Steering Algorithm ###
-
-The actuator is controlled by the Arduino via a motor shield to turn the vehicle. The actuator that was ordered does not have onboard PWM control. A relay cannot be used, as the actuator must be actively extended/retracted. Therefore the best way to control the actuator is with a motor shield for the arduino. This allows the actuator to be controlled by PWM and does not deteriorate any of the components. The motor shield used for testing has a 2A limit, while the actuator requires a maximum current draw of ~8-10A. Therefore a motor shield with a higher current rating is required (but for basic testing purposes the lower current rated shield will work).
-
-<pictures>
-  
-#### LabVIEW Code ####  
-
-The steering algorithm is simple and does not require a compass. Rather, GPS points are read in ~2/second. Simple computations are made which calculate two things: (1) current bearing and (2) bearing to desintation. 
-
-<pictures>
-  
-#### Hardware Setup ####
-
-#### Mounting ####
-
-
 
 ### Throttle Control ###
 
@@ -143,9 +114,26 @@ testing and code
 
 
 
+### Actuator Control and Steering Algorithm ###
+
+The actuator is controlled by the Arduino via a motor shield to turn the vehicle. The actuator that was ordered does not have onboard PWM control. A relay cannot be used, as the actuator must be actively extended/retracted. Therefore the best way to control the actuator is with a motor shield for the arduino. This allows the actuator to be controlled by PWM and does not deteriorate any of the components. The motor shield used for testing has a 2A limit, while the actuator requires a maximum current draw of ~8-10A. Therefore a motor shield with a higher current rating is required (but for basic testing purposes the lower current rated shield will work).
+
+<pictures>
+  
+  --link to GitHub repo--
+  
+The steering algorithm is simple and does not require a compass. Rather, GPS points are read in ~2/second. Simple computations are made which calculate two things: (1) current bearing and (2) bearing to desintation. 
+
+<pictures>
+
+
+
+
 ### Temperature Monitor/Fan Control ###
 
 A thermometer was added to check the ambient temperature in the control box. 
+
+
 
 
 ## Download and Setup
