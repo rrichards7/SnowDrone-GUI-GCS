@@ -106,35 +106,21 @@ Once the GPS is connected to the Arduino MEGA, the GPS point (lattitude/longitud
 
 ### Throttle Control ###
 
-
-
-CAD Files and design
-
-testing and code
-
-
+Please see: [Throttle Control Respositroy](https://github.com/rrichards7/Throttle-Control)
 
 ### Actuator Control and Steering Algorithm ###
 
-The actuator is controlled by the Arduino via a motor shield to turn the vehicle. The actuator that was ordered does not have onboard PWM control. A relay cannot be used, as the actuator must be actively extended/retracted. Therefore the best way to control the actuator is with a motor shield for the arduino. This allows the actuator to be controlled by PWM and does not deteriorate any of the components. The motor shield used for testing has a 2A limit, while the actuator requires a maximum current draw of ~8-10A. Therefore a motor shield with a higher current rating is required (but for basic testing purposes the lower current rated shield will work).
-
-<pictures>
-  
-  --link to GitHub repo--
+Please see: [Actuator Control Respository](https://github.com/rrichards7/Actuator-Control)
   
 The steering algorithm is simple and does not require a compass. Rather, GPS points are read in ~2/second. Simple computations are made which calculate two things: (1) current bearing and (2) bearing to desintation. 
 
-<pictures>
+### Camera and Obstacle Avoidance ###
 
+Please see: [Obstacle Avoidance (Color Threshold)](https://github.com/rrichards7/Obstacle-Avoidance-CT) and [Obstacle Avoidance (Curl-Field Analysis)](https://github.com/rrichards7/Obstacle-Avoidance-OF)
 
+### GPS Control ###
 
-
-### Temperature Monitor/Fan Control ###
-
-A thermometer was added to check the ambient temperature in the control box. 
-
-
-
+Please see: [GPS Control Repository](https://github.com/rrichards7/GPS-Control)
 
 ## Download and Setup
 
@@ -143,24 +129,14 @@ project download
 instructions for making project into .exe or creating installer
 
 
-## Future Work
+
+
+
+
+## Future Work ##
 
 future work blurb here...
 ...
 ...
 
-### Camera and Obstacle Avoidance ###
-
-
-
-### Actuator Motor Shield ### 
-
-PWM board for actuator
-
-### Throttle Control ###
-
-correct setup
-
-### XTend Radios ###
-
-setup
+## Appendix ##
