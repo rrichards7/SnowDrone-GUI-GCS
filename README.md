@@ -112,7 +112,11 @@ Please see: [Throttle Control Respositroy](https://github.com/rrichards7/Throttl
 
 Please see: [Actuator Control Respository](https://github.com/rrichards7/Actuator-Control)
   
-The steering algorithm is simple and does not require a compass. Rather, GPS points are read in ~2/second. Simple computations are made which calculate two things: (1) current bearing and (2) bearing to desintation. 
+The steering/navigating algorithmn itself is not explained in the actuator control repository. The algorithm is simple and does not require a compass. Rather, GPS points are read in ~2/second. Simple computations are made which calculate two things: (1) current bearing and (2) bearing to desintation. The steering angle of the snowmobile is then set to the bearing (angle) required to reach the destination. If the bearing exceeds +/-30 degrees then the steering angle is set to +/- 30 degrees respectively. 
+
+The actuator is moved for a certain amount of time (following the code in the actuator control repository) to make the snowmobile steer. The actuator moves a certain length every second. From there, the steering angle can be determined empirically from the amount of time the actuator is active. For example, if the actuator it actively extending for 20 seconds, then this equates to a 25 degree turn.
+
+The actuator's operation manual specifically states different weaknesses, namely the thermal regulation. The actuator has a specific active duty cycle, which means every time it is active, it has a calculatable required rest time. This thermal regulation was coded and included in the GCS VI.
 
 ### Camera and Obstacle Avoidance ###
 
