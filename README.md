@@ -128,19 +128,6 @@ Please see: [GPS Control Repository](https://github.com/rrichards7/GPS-Control)
 
 ## Download and Setup
 
-make sure all dependencies are here
-project download
-instructions for making project into .exe or creating installer
 
-
-
-
-
-
-## Future Work ##
-
-future work blurb here...
-...
-...
 
 ## Appendix ##
