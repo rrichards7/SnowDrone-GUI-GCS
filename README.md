@@ -53,7 +53,7 @@ The data flow diagram below describes the main control interface for the SnowDro
 
 object oriented ------------------------
 
-## Completed Subsystems and Algorithms ##
+## Documentation on Completed Subsystems and Algorithms ##
 The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, actuator and steering control, throttle control, temperature and fan control*. A short description and visuals for each completed subsystem are included below.
 
 ### GPS and Google Earth API ###
@@ -125,12 +125,20 @@ Please see: [Obstacle Avoidance (Color Threshold)](https://github.com/rrichards7
 
 Please see: [GPS Control Repository](https://github.com/rrichards7/GPS-Control)
 
-## Download and Setup
+## Download and Setup ##
 
 To download:
 
-(1) click the 
+(1) click **Clone or download** >> **Download ZIP**
+
 ![1](https://user-images.githubusercontent.com/23239868/29080006-b3350dbe-7c2c-11e7-930e-f8a9a518585e.JPG)
 
+(2) **Unzip** or **Extract** the folder and open the **SnowDroneProj.lvproj** file
+
+(3) open the **Main.vi** VI within the project (this is the GUI)
+
+## Operation Instructions ##
+
+## Future Considerations ##
 
 ## Appendix ##
