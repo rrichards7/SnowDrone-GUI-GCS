@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Old Main.kml</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Old Main</name>
+		<visibility>0</visibility>
+		<LookAt>
+			<longitude>-77.86149807492525</longitude>
+			<latitude>40.79522099178236</latitude>
+			<altitude>0</altitude>
+			<heading>-18.27676956959646</heading>
+			<tilt>0</tilt>
+			<range>721.1894652143367</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<coordinates>-77.86202500050914,40.79587372033245,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

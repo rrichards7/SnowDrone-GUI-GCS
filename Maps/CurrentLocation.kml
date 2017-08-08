@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>kml_sample1.kml</name>
+
+<Placemark>
+<name>
+TESTTT
+</name>
+<visibility>1</visibility>
+<description>Current Position</description>
+<Style>
+<IconStyle>
+<Icon>
+<href>http://logn.ca/marker.png</href>
+</Icon>
+</IconStyle>
+<LineStyle>
+<width>2</width>
+</LineStyle>
+</Style>
+<Point>
+<extrude>1</extrude>
+<altitudeMode>relativeToGround</altitudeMode>
+<coordinates>,,0</coordinates>
+</Point>
+</Placemark>
+
+</Document>
+</kml>
+

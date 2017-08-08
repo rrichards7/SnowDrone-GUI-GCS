@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>andrew route.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>andrew route</name>
+		<open>1</open>
+		<Placemark>
+			<name>1</name>
+			<LookAt>
+				<longitude>-77.86067027652059</longitude>
+				<latitude>40.80026091921076</latitude>
+				<altitude>0</altitude>
+				<heading>11.26146658495806</heading>
+				<tilt>0</tilt>
+				<range>3758.837157196189</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-77.84278102803556,40.80541381686779,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>2</name>
+			<LookAt>
+				<longitude>-77.84460256171941</longitude>
+				<latitude>40.80526175717176</latitude>
+				<altitude>0</altitude>
+				<heading>11.27196601281611</heading>
+				<tilt>0</tilt>
+				<range>914.8938024183429</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-77.84514479799547,40.8070622282296,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
