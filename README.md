@@ -1,3 +1,4 @@
+![image001](https://user-images.githubusercontent.com/23239868/28748600-b190782c-7489-11e7-82ae-55db54c94050.jpg)
 # Autonomous Snowmobile - General User Interface (GUI)/Ground Control Station (GCS) #
 
 *The Pennsylvania State University - School of Electrical Engineering and Computer Science*
@@ -50,8 +51,6 @@ LINX is a library developed by MakerHub that allows programmers to interface wit
 The data flow diagram below describes the main control interface for the SnowDrone (this excludes states such as: openning .kml files, disabling controls, temperature settings, configuration/settings, etc). This diagram should give the user a general overview about how the SnowDrone operates and where more states can be added. For example, if a gyroscope were to be added it could be placed in the **Check Status** state - effectively adding a new message to the queue which checks the gyroscope values.
 
 ![dataflow](https://user-images.githubusercontent.com/23239868/28581022-23d36592-712f-11e7-9085-d6b1512bad03.jpg)
-
-object oriented ------------------------
 
 ## Documentation on Completed Subsystems and Algorithms ##
 The subsystems that have been successfully completed are the following: *GPS and Google Earth integration, actuator and steering control, throttle control, temperature and fan control*. A short description and visuals for each completed subsystem are included below.
@@ -159,9 +158,13 @@ To operate:
 
 **Note:** The program will take over and start the feedback loop illustrated in the **Main Data Flow** section
 
-## Notes of Use and Future Considerations ##
+## Notes and Future Considerations ##
 
+This section includes a list of notes about the code and recommended modifications for future groups:
 
+(1) 
+
+(2)
 
 ## Appendix ##
 
