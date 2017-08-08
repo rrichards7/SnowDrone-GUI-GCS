@@ -146,7 +146,7 @@ To operate:
 
 (2) connect the **ArduinoMEGA** to the computer via USB
 
-(3) **Open** the Main.vi and select the ArduinoMEGA prot from the **COM Port** control
+(3) **Open** the Main.vi and select the ArduinoMEGA port from the **COM Port** control
 
 ![5](https://user-images.githubusercontent.com/23239868/29081919-f4e6ec6e-7c31-11e7-9c58-d459d396f4e2.JPG)
 
