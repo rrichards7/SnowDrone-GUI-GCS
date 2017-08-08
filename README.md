@@ -127,6 +127,10 @@ Please see: [GPS Control Repository](https://github.com/rrichards7/GPS-Control)
 
 ## Download and Setup
 
+To download:
+
+(1) click the 
+![1](https://user-images.githubusercontent.com/23239868/29080006-b3350dbe-7c2c-11e7-930e-f8a9a518585e.JPG)
 
 
 ## Appendix ##
