@@ -158,13 +158,21 @@ To operate:
 
 **Note:** The program will take over and start the feedback loop illustrated in the **Main Data Flow** section
 
+(5) to stop/abort, press the **Abort** button
+
 ## Notes and Future Considerations ##
 
 This section includes a list of notes about the code and recommended modifications for future groups:
 
-(1) 
+(1) The configuration botton was left with no function - however, thoughts on what would belong in a configuration panel are included in the code.
 
-(2)
+(2) The pin numbers for the Arduino were randomly considered and placed in the LabVIEW code convienietly in each case. However, it would be incredibly useful to have a pop-up window/dialog (configuration panel) where the user could input the pins for each subsystem so that there is more organization. These pin values could be written to a global variable and read in future cases when needed.
+
+(3) The actuator steering control system might want to be revised. Rather than turning the exact number of degrees every time, it may be more useful to turn in single degree increments (essentially a PID system).
+
+(4) The camera code is essentially complete but must be fully integrated in the GUI/GCS. The camera code must be modified to send a custom command to the LabVIEW code which triggers some avoidance maneuver (described more in detail in the [Obstacle Avoidance (Color Threshold Repository)](https://github.com/rrichards7/Obstacle-Avoidance-CT)
+
+(5) The radios did not function properly and therefore were not integrated. Future teams must use the XTend or XBee radios to make the ArduinoMEGA *"mobile"*.
 
 ## Appendix ##
 
