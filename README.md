@@ -159,6 +159,12 @@ To operate:
 
 **Note:** The program will take over and start the feedback loop illustrated in the **Main Data Flow** section
 
-## Future Considerations ##
+## Notes of Use and Future Considerations ##
+
+
 
 ## Appendix ##
+
+If you have any questions about this code or related subsystems, contact me via email with subject: **SnowDrone LabVIEW**
+
+**email:** *ryan.richards2007@gmail.com*
