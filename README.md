@@ -124,7 +124,7 @@ Please see: [Obstacle Avoidance (Color Threshold)](https://github.com/rrichards7
 
 Please see: [GPS Control Repository](https://github.com/rrichards7/GPS-Control)
 
-## Download and Setup ##
+## Download and Open Code ##
 
 To download:
 
@@ -144,9 +144,15 @@ To operate:
 
 (1) follow the instructions in the **GPS and Google Earth API** section to make a .kml file
 
-(2) **Run** the Main.vi VI
+(2) connect the **ArduinoMEGA** to the computer via USB
 
-(3) click the **Open Path** button to upload the .kml file
+(3) **Open** the Main.vi and select the ArduinoMEGA prot from the **COM Port** control
+
+![5](https://user-images.githubusercontent.com/23239868/29081919-f4e6ec6e-7c31-11e7-9c58-d459d396f4e2.JPG)
+
+(4) **Run** the Main.vi VI
+
+(5) click the **Open Path** button to upload the .kml file
 
 ![3](https://user-images.githubusercontent.com/23239868/29080751-9fcd531a-7c2e-11e7-9a13-a232870c237b.JPG)
 
@@ -154,11 +160,11 @@ To operate:
 
 ![4](https://user-images.githubusercontent.com/23239868/29080750-9fc975e2-7c2e-11e7-8245-9cdbf9b14e68.JPG)
 
-(4) If all subsystems are properly connected and the pins are configured correctly, click the **Start** button
+(6) If all subsystems are properly connected and the pins are configured correctly, click the **Start** button
 
 **Note:** The program will take over and start the feedback loop illustrated in the **Main Data Flow** section
 
-(5) to stop/abort, press the **Abort** button
+(7) to stop/abort, press the **Abort** button
 
 ## Notes and Future Considerations ##
 
